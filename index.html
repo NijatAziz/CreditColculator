@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Kredit Kolkulyatoru</h1>
+    <span>Kredit kolkulyatoru ile muxtelif kredit meblegleri, faiz dereceleri ve sertleri ucun  texmini odenislerinizi mueyyenlesdirin.</span>
+    
+    <label for="kreditMeblegi">Kredit Meblegi</label>
+    <input placeholder=" Zehmet olmasa istdiyiniz mebleg" id="kreditMeblegi" type="number" min="0"><br><br>
+    
+    <label  for="faizDerecesi">Faiz Derecesi (%):</label>
+    <input placeholder="Zehmet olmasa faizi qeyd edin" id="faizDerecesi" type="number" min="0" max="26"><br><br>
+    
+    <label for="kreditMuddeti">Kredit muddeti (ay):</label>
+    <input placeholder="Zehmet olmasa muddeti qeyd edin" id="kreditMuddeti" type="number" min="0" max="60"><br><br>
+    
+    <button onclick="hesabla()">Hesabla</button><br><br>
+
+    <p>Texmini Ayliq Odenisiniz: <span id="texminiOdenis"></span></p>
+    <p>Umumi Odenileck Mebleg: <span id="umumiOdenilecekMebleg"></span></p>
+    <p>Odenilmis Umumi Faiz: <span id="odenilmisUmumiFaiz"></span></p>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
+
